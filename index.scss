@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+// VARIABLES
+
+$red-color : #E52B2B;
+$light : #fff;
+$dark : #000;
+
+// VARIABLES
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $light;
+  font-family: "Montserrat", sans-serif;
+  color : $red-color;
+
+  header {
+    background: $red-color;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 35px 0px 35px 0px;
+    display: flex;
+    justify-content: space-around;
+    .header-link {
+      a {
+        text-decoration: none;
+        color: $light;
+        position: relative;
+        &:hover {
+          color: $dark;
+          transition: 0.5s;
+          &:after {
+            content: '';
+            position: absolute;
+            height: 2px;
+            bottom: -4px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 50%;
+            background: $light;
+          }
+        }
+      }
+    }
+  }
+  
+  h1 {
+    color : $red-color;
+    text-align: center;
+    margin: 48px auto;
+    font-size: 2.2em;
+  }
+
+  .pokemons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    .astuce {
+      h2 {
+        &:after {
+          content : " #" counter(astuce)
+
+        }
+      }
+
+      background-color: $light;
+      border: 2px solid $red-color;
+      position: relative;
+      padding: 24px;
+      padding-left: 180px;
+      margin: 24px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      border-radius: 10px;
+      overflow: hidden;
+      counter-increment: astuce;
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before {
+        background-color: $red-color;
+        color: $light;
+        height: 100%;
+        position: absolute;
+        top : 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          -webkit-transition: all 3s;
+          transition: all 3s;
+        }
+      }
+    }
+
+    .gift-1 {
+      &:before {
+        content : url("./images/egg.svg");
+      }
+      &:hover {
+        h2 {
+          &:after {
+            content : " #" counter(astuce) " - Pas mal !!"
+          }
+        }
+        &:before {
+          content : url("./images/miaouss.svg");
+        }
+      }
+    }
+
+    .gift-2 {
+      &:before {
+        content : url("./images/hyperball.svg");
+      }
+      &:hover {
+        h2 {
+          &:after {
+            content : " #" counter(astuce) " - GENIAL !!"
+          }
+        }
+        &:before {
+          content : url("./images/minidraco.svg");
+        }
+      }
+    }
+
+    .gift-3 {
+      &:before {
+        content : url("./images/masterball.svg");
+      }
+      &:hover {
+        h2 {
+          &:after {
+            content : " #" counter(astuce) " - JACKPOT 🎉 !!"
+          }
+        }
+        &:before {
+          content : url("./images/electhor.svg");
+        }
+      }
+    }
+
+    .gift-4 {
+      &:before {
+        content : url("./images/hyperball.svg");
+      }
+      &:hover {
+        h2 {
+          &:after {
+            content : " #" counter(astuce) " - OMG 🥳 !!"
+          }
+        }
+        &:before {
+          content : url("./images/salameche.svg");
+        }
+      }
+    }
+
+    .gift-5 {
+      &:before {
+        content : url("./images/pokeball.svg");
+      }
+      &:hover {
+        h2 {
+          &:after {
+            content : " #" counter(astuce) " - Bravo !!"
+          }
+        }
+        &:before {
+          content : url("./images/pikachu.svg");
+        }
+      }
+    }
+
+    .gift-6 {
+      &:before {
+        content : url("./images/pokeball.svg");
+      }
+      &:hover {
+        h2 {
+          &:after {
+            content : " #" counter(astuce) " - Bravo !!"
+          }
+        }
+        &:before {
+          content : url("./images/mimitoss.svg");
+        }
+      }
+    }
+
+    .gift-7 {
+      &:before {
+        content : url("./images/masterball.svg");
+      }
+      &:hover {
+        h2 {
+          &:after {
+            content : " #" counter(astuce) " - Tu y as cru avoue... 😏 !!"
+          }
+        }
+        &:before {
+          content : url("./images/nosferapti.svg");
+        }
+      }
+    }
+
+    .gift-8 {
+      &:before {
+        content : url("./images/pokeball.svg");
+      }
+      &:hover {
+        h2 {
+          &:after {
+            content : " #" counter(astuce) " - OUAIIS !!"
+          }
+        }
+        &:before {
+          content : url("./images/carapuce.svg");
+        }
+      }
+    }
+
+    .gift-9 {
+      &:before {
+        content : url("./images/egg.svg");
+      }
+      &:hover {
+        h2 {
+          &:after {
+            content : " #" counter(astuce) " - TROP MIGNON 😱 !!"
+          }
+        }
+        &:before {
+          content : url("./images/psykokwak.svg");
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+  // FORM POKECENTER
+  .center {
+    margin: 0 auto;
+    border: 2px solid $red-color;
+    border-radius: 10px;
+    margin: 0px 35px 0px 35px;
+
+    .toggler-wrapper.style-14 {
+      display: flex;
+      width: auto;
+      height: auto;
+      padding: 15px 0px 15px 0px;
+
+      label {
+        font-weight: 800;
+      }
+
+      input[type=checkbox] {
+        position: absolute;
+        opacity: 1;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        z-index: 1;
+        &:disabled {
+          + {
+            .label-checkbox {
+              &:before {
+                background-color: $red-color;
+                border: 2px solid $dark;
+                opacity: 0.4;
+              }
+              &:after {
+                background-color: $light;
+                opacity: 0.4;
+                left: 25px;
+              }
+            }
+          }
+        }
+        &:checked {
+          + {
+            .label-checkbox {
+              &:before {
+                background-color: $red-color;
+                border: 2px solid $dark;
+              }
+              &:after {
+                background-color: $light;
+                left: 25px;
+              }
+            }
+          }
+        }
+      }
+
+      .label-checkbox {
+        width: auto;
+        display: inline-block;
+        opacity: 1;
+        padding-left: 85px;
+        display: flex;
+        align-items: center;
+        &:after {
+          margin: 12px 0px 0px 55px;
+          width: 12.5px;
+          height: 12.5px;
+          left: 6.25px;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          content: '';
+          position: absolute;
+          background-color: $dark;
+          transition: 0.3S all ease-in-out;
+        }
+        &:before {
+          content: '';
+          margin-left: 55px;
+          background-color: $light;
+          border: 2px solid $red-color;
+          position: absolute;
+          border-radius: 100px;
+          left: 0;
+          width: 45px;
+          height: 25px;
+          -webkit-transition: all 300ms ease;
+          transition: all 300ms ease;
+        }
+      }
+    }
+
+    .submit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        margin: 35px 0px 35px 0px;
+        padding: 10px 35px 10px 35px;
+        position: relative;
+        color: $dark;
+        text-decoration: none;
+        display: block;
+        text-decoration: none;
+        border: 2px solid $red-color;
+        font-weight: 800;
+        text-transform: uppercase;
+        overflow: hidden;
+        &:hover {
+          transition: 1s all ease;
+          cursor: pointer;
+          color: $light;
+          &:before {
+            height: 300%;
+          }
+        }
+        &:before {
+          background: $red-color;
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          z-index: -1;
+          height: 0px;
+          transition: all 0.6s ease;
+          width: 120%;
+          transform: translate(-50%, -50%) rotate(25deg);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,284 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  color: #E52B2B;
+}
+body header {
+  background: #E52B2B;
+  font-weight: 700;
+  font-size: 32px;
+  padding: 35px 0px 35px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+body header .header-link a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+body header .header-link a:hover {
+  color: #000;
+  transition: 0.5s;
+}
+body header .header-link a:hover:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+  background: #fff;
+}
+body h1 {
+  color: #E52B2B;
+  text-align: center;
+  margin: 48px auto;
+  font-size: 2.2em;
+}
+body .pokemons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+body .pokemons .astuce {
+  background-color: #fff;
+  border: 2px solid #E52B2B;
+  position: relative;
+  padding: 24px;
+  padding-left: 180px;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  counter-increment: astuce;
+}
+body .pokemons .astuce h2:after {
+  content: " #" counter(astuce);
+}
+body .pokemons .astuce:hover {
+  cursor: pointer;
+}
+body .pokemons .astuce:before {
+  background-color: #E52B2B;
+  color: #fff;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .pokemons .astuce:before:hover {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+body .pokemons .gift-1:before {
+  content: url("./images/egg.svg");
+}
+body .pokemons .gift-1:hover h2:after {
+  content: " #" counter(astuce) " - Pas mal !!";
+}
+body .pokemons .gift-1:hover:before {
+  content: url("./images/miaouss.svg");
+}
+body .pokemons .gift-2:before {
+  content: url("./images/hyperball.svg");
+}
+body .pokemons .gift-2:hover h2:after {
+  content: " #" counter(astuce) " - GENIAL !!";
+}
+body .pokemons .gift-2:hover:before {
+  content: url("./images/minidraco.svg");
+}
+body .pokemons .gift-3:before {
+  content: url("./images/masterball.svg");
+}
+body .pokemons .gift-3:hover h2:after {
+  content: " #" counter(astuce) " - JACKPOT 🎉 !!";
+}
+body .pokemons .gift-3:hover:before {
+  content: url("./images/electhor.svg");
+}
+body .pokemons .gift-4:before {
+  content: url("./images/hyperball.svg");
+}
+body .pokemons .gift-4:hover h2:after {
+  content: " #" counter(astuce) " - OMG 🥳 !!";
+}
+body .pokemons .gift-4:hover:before {
+  content: url("./images/salameche.svg");
+}
+body .pokemons .gift-5:before {
+  content: url("./images/pokeball.svg");
+}
+body .pokemons .gift-5:hover h2:after {
+  content: " #" counter(astuce) " - Bravo !!";
+}
+body .pokemons .gift-5:hover:before {
+  content: url("./images/pikachu.svg");
+}
+body .pokemons .gift-6:before {
+  content: url("./images/pokeball.svg");
+}
+body .pokemons .gift-6:hover h2:after {
+  content: " #" counter(astuce) " - Bravo !!";
+}
+body .pokemons .gift-6:hover:before {
+  content: url("./images/mimitoss.svg");
+}
+body .pokemons .gift-7:before {
+  content: url("./images/masterball.svg");
+}
+body .pokemons .gift-7:hover h2:after {
+  content: " #" counter(astuce) " - Tu y as cru avoue... 😏 !!";
+}
+body .pokemons .gift-7:hover:before {
+  content: url("./images/nosferapti.svg");
+}
+body .pokemons .gift-8:before {
+  content: url("./images/pokeball.svg");
+}
+body .pokemons .gift-8:hover h2:after {
+  content: " #" counter(astuce) " - OUAIIS !!";
+}
+body .pokemons .gift-8:hover:before {
+  content: url("./images/carapuce.svg");
+}
+body .pokemons .gift-9:before {
+  content: url("./images/egg.svg");
+}
+body .pokemons .gift-9:hover h2:after {
+  content: " #" counter(astuce) " - TROP MIGNON 😱 !!";
+}
+body .pokemons .gift-9:hover:before {
+  content: url("./images/psykokwak.svg");
+}
+body .center {
+  margin: 0 auto;
+  border: 2px solid #E52B2B;
+  border-radius: 10px;
+  margin: 0px 35px 0px 35px;
+}
+body .center .toggler-wrapper.style-14 {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 15px 0px 15px 0px;
+}
+body .center .toggler-wrapper.style-14 label {
+  font-weight: 800;
+}
+body .center .toggler-wrapper.style-14 input[type=checkbox] {
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 1;
+}
+body .center .toggler-wrapper.style-14 input[type=checkbox]:disabled + .label-checkbox:before {
+  background-color: #E52B2B;
+  border: 2px solid #000;
+  opacity: 0.4;
+}
+body .center .toggler-wrapper.style-14 input[type=checkbox]:disabled + .label-checkbox:after {
+  background-color: #fff;
+  opacity: 0.4;
+  left: 25px;
+}
+body .center .toggler-wrapper.style-14 input[type=checkbox]:checked + .label-checkbox:before {
+  background-color: #E52B2B;
+  border: 2px solid #000;
+}
+body .center .toggler-wrapper.style-14 input[type=checkbox]:checked + .label-checkbox:after {
+  background-color: #fff;
+  left: 25px;
+}
+body .center .toggler-wrapper.style-14 .label-checkbox {
+  width: auto;
+  display: inline-block;
+  opacity: 1;
+  padding-left: 85px;
+  display: flex;
+  align-items: center;
+}
+body .center .toggler-wrapper.style-14 .label-checkbox:after {
+  margin: 12px 0px 0px 55px;
+  width: 12.5px;
+  height: 12.5px;
+  left: 6.25px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  background-color: #000;
+  transition: 0.3S all ease-in-out;
+}
+body .center .toggler-wrapper.style-14 .label-checkbox:before {
+  content: "";
+  margin-left: 55px;
+  background-color: #fff;
+  border: 2px solid #E52B2B;
+  position: absolute;
+  border-radius: 100px;
+  left: 0;
+  width: 45px;
+  height: 25px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+body .center .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .center .submit a {
+  margin: 35px 0px 35px 0px;
+  padding: 10px 35px 10px 35px;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+  border: 2px solid #E52B2B;
+  font-weight: 800;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+body .center .submit a:hover {
+  transition: 1s all ease;
+  cursor: pointer;
+  color: #fff;
+}
+body .center .submit a:hover:before {
+  height: 300%;
+}
+body .center .submit a:before {
+  background: #E52B2B;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  height: 0px;
+  transition: all 0.6s ease;
+  width: 120%;
+  transform: translate(-50%, -50%) rotate(25deg);
+}
+
+/*# sourceMappingURL=index.css.map */
