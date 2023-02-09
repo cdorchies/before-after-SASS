@@ -201,6 +201,7 @@ body .center form .toggler-wrapper.style-14 label {
   font-weight: 800;
 }
 body .center form .toggler-wrapper.style-14 input[type=checkbox] {
+  height: 20px;
   position: absolute;
   opacity: 1;
   left: 0;
