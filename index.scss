@@ -50,11 +50,11 @@ body {
       }
     }
   }
-  
+
   h1 {
     color : $red-color;
     text-align: center;
-    margin: 48px auto;
+    margin: 50px 0px 0px 0px;
     font-size: 2.2em;
   }
 
@@ -373,7 +373,7 @@ body {
         border-radius: 10px;
         padding: 25px;
         text-align: center;
-        p {           
+        p {
           color: $dark;
           text-align: center;
           &:before {
@@ -430,4 +430,95 @@ body {
       }
     }
   }
+
+  // POKEBALL
+
+  .child-to-body {
+    width: 300px;
+    height: 400px;
+    flex-shrink: 0;
+    .poke_box {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      .pokeball {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        background: $light;
+        border: 5px solid #000;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: inset -10px 10px 0 10px #ccc;
+        animation: shake 1.25s cubic-bezier(.36,.07,.19,.97) infinite;
+        animation-play-state: paused;
+        &:before {
+          content:"";
+          position: absolute;
+          background: $red-color;
+          width: 100%;
+          height: 50%;
+        }
+        &::after {
+          content:"";
+          position: absolute;
+          top: calc(50% - 5px);
+          width: 100%;
+          height: 10px;
+          background: #000;
+        }
+        &:hover {
+          animation-play-state: running;
+          .pokeball__button {
+            cursor: pointer;
+            animation-play-state: running;
+          }
+        }
+        .pokeball__button {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          border: 4px solid #7f8c8d;
+          border-radius: 50%;
+          top: calc(50% - 15px);
+          left: calc(50% - 15px);
+          box-shadow: 0 0 0 7px $dark;
+          background: $light;
+          z-index: 10;
+          animation: blink .5s alternate infinite;
+          animation-play-state: paused;
+        }
+      }
+    }
+  }
+}
+
+// Keyframes 
+
+@keyframes shake {
+	0% {
+		transform: translate(0, 0) rotate(0);
+	}
+	20% {
+		transform: translate(-10px, 0) rotate(-20deg);
+	}
+	30% {
+		transform: translate(10px, 0) rotate(20deg);
+	}
+	50% {
+		transform: translate(-10px, 0) rotate(-10deg);
+	}
+	60% {
+		transform: translate(10px, 0) rotate(10deg);
+	}
+	100% {
+		transform: translate(0, 0) rotate(0);
+	}
+}
+
+@keyframes blink {
+  from { background: #eee;}
+  to { background: #e74c3c; }
 }
