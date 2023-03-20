@@ -91,16 +91,13 @@ body .pokemons .gift-1:before {
   content: url("./images/egg.svg");
 }
 body .pokemons .gift-1:hover h2:after {
-  content: " #" counter(astuce) " - Pas mal !!";
-}
-body .pokemons .gift-1:hover:before {
-  content: url("./images/miaouss.svg");
+  content: " #" counter(astuce) " - Miaouss";
 }
 body .pokemons .gift-2:before {
   content: url("./images/hyperball.svg");
 }
 body .pokemons .gift-2:hover h2:after {
-  content: " #" counter(astuce) " - GENIAL !!";
+  content: " #" counter(astuce) " - Draco";
 }
 body .pokemons .gift-2:hover:before {
   content: url("./images/minidraco.svg");
@@ -109,7 +106,7 @@ body .pokemons .gift-3:before {
   content: url("./images/masterball.svg");
 }
 body .pokemons .gift-3:hover h2:after {
-  content: " #" counter(astuce) " - JACKPOT 🎉 !!";
+  content: " #" counter(astuce) " - Electhor";
 }
 body .pokemons .gift-3:hover:before {
   content: url("./images/electhor.svg");
@@ -118,7 +115,7 @@ body .pokemons .gift-4:before {
   content: url("./images/hyperball.svg");
 }
 body .pokemons .gift-4:hover h2:after {
-  content: " #" counter(astuce) " - OMG 🥳 !!";
+  content: " #" counter(astuce) " - Salamèche";
 }
 body .pokemons .gift-4:hover:before {
   content: url("./images/salameche.svg");
@@ -127,7 +124,7 @@ body .pokemons .gift-5:before {
   content: url("./images/pokeball.svg");
 }
 body .pokemons .gift-5:hover h2:after {
-  content: " #" counter(astuce) " - Bravo !!";
+  content: " #" counter(astuce) " - Pikachu";
 }
 body .pokemons .gift-5:hover:before {
   content: url("./images/pikachu.svg");
@@ -136,7 +133,7 @@ body .pokemons .gift-6:before {
   content: url("./images/pokeball.svg");
 }
 body .pokemons .gift-6:hover h2:after {
-  content: " #" counter(astuce) " - Bravo !!";
+  content: " #" counter(astuce) " - Mimitoss";
 }
 body .pokemons .gift-6:hover:before {
   content: url("./images/mimitoss.svg");
@@ -145,7 +142,7 @@ body .pokemons .gift-7:before {
   content: url("./images/masterball.svg");
 }
 body .pokemons .gift-7:hover h2:after {
-  content: " #" counter(astuce) " - Tu y as cru avoue... 😏 !!";
+  content: " #" counter(astuce) " - Nosferapti";
 }
 body .pokemons .gift-7:hover:before {
   content: url("./images/nosferapti.svg");
@@ -154,7 +151,7 @@ body .pokemons .gift-8:before {
   content: url("./images/pokeball.svg");
 }
 body .pokemons .gift-8:hover h2:after {
-  content: " #" counter(astuce) " - OUAIIS !!";
+  content: " #" counter(astuce) " - Carapuce";
 }
 body .pokemons .gift-8:hover:before {
   content: url("./images/carapuce.svg");
@@ -163,7 +160,7 @@ body .pokemons .gift-9:before {
   content: url("./images/egg.svg");
 }
 body .pokemons .gift-9:hover h2:after {
-  content: " #" counter(astuce) " - TROP MIGNON 😱 !!";
+  content: " #" counter(astuce) " - Psykokwak";
 }
 body .pokemons .gift-9:hover:before {
   content: url("./images/psykokwak.svg");

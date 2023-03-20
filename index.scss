@@ -36,15 +36,15 @@ body {
           color: $dark;
           transition: 0.5s;
           &:after {
-            content: '';
-            position: absolute;
-            height: 2px;
-            bottom: -4px;
-            margin: 0 auto;
-            left: 0;
-            right: 0;
-            width: 50%;
-            background: $light;
+          content: '';
+           position: absolute;
+           height: 2px;
+           bottom: -4px;
+           margin: 0 auto;
+           left: 0;
+           right: 0;
+           width: 50%;
+           background: $light;
           }
         }
       }
@@ -105,18 +105,18 @@ body {
     }
 
     .gift-1 {
-      &:before {
-        content : url("./images/egg.svg");
-      }
+       &:before {
+         content : url("./images/egg.svg");
+       }
       &:hover {
         h2 {
           &:after {
-            content : " #" counter(astuce) " - Pas mal !!"
+            content : " #" counter(astuce) " - Miaouss"
           }
         }
-        &:before {
-          content : url("./images/miaouss.svg");
-        }
+        // &:before {
+        //   content : url("./images/miaouss.svg");
+        // }
       }
     }
 
@@ -127,7 +127,7 @@ body {
       &:hover {
         h2 {
           &:after {
-            content : " #" counter(astuce) " - GENIAL !!"
+            content : " #" counter(astuce) " - Draco"
           }
         }
         &:before {
@@ -143,7 +143,7 @@ body {
       &:hover {
         h2 {
           &:after {
-            content : " #" counter(astuce) " - JACKPOT 🎉 !!"
+            content : " #" counter(astuce) " - Electhor"
           }
         }
         &:before {
@@ -159,7 +159,7 @@ body {
       &:hover {
         h2 {
           &:after {
-            content : " #" counter(astuce) " - OMG 🥳 !!"
+            content : " #" counter(astuce) " - Salamèche"
           }
         }
         &:before {
@@ -175,7 +175,7 @@ body {
       &:hover {
         h2 {
           &:after {
-            content : " #" counter(astuce) " - Bravo !!"
+            content : " #" counter(astuce) " - Pikachu"
           }
         }
         &:before {
@@ -191,7 +191,7 @@ body {
       &:hover {
         h2 {
           &:after {
-            content : " #" counter(astuce) " - Bravo !!"
+            content : " #" counter(astuce) " - Mimitoss"
           }
         }
         &:before {
@@ -207,7 +207,7 @@ body {
       &:hover {
         h2 {
           &:after {
-            content : " #" counter(astuce) " - Tu y as cru avoue... 😏 !!"
+            content : " #" counter(astuce) " - Nosferapti"
           }
         }
         &:before {
@@ -223,7 +223,7 @@ body {
       &:hover {
         h2 {
           &:after {
-            content : " #" counter(astuce) " - OUAIIS !!"
+            content : " #" counter(astuce) " - Carapuce"
           }
         }
         &:before {
@@ -239,7 +239,7 @@ body {
       &:hover {
         h2 {
           &:after {
-            content : " #" counter(astuce) " - TROP MIGNON 😱 !!"
+            content : " #" counter(astuce) " - Psykokwak"
           }
         }
         &:before {
@@ -495,7 +495,7 @@ body {
   }
 }
 
-// Keyframes 
+// Keyframes
 
 @keyframes shake {
 	0% {
